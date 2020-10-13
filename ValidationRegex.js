@@ -14,3 +14,10 @@ export const validateEmail = (mail) => {
   }
   return false;
 };
+
+export const validateMobile = (mobile) => {
+  if(/^(\+\d{1,3}[- ]?)?\d{10}$/.test(mobile)){
+    return true
+  }
+  return false
+}
